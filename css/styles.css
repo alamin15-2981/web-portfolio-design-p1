@@ -1,0 +1,216 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Default css */
+*,*::before,*::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.btn {
+    text-transform: uppercase;
+    padding: 12px 30px;
+    color: white;
+    font-weight: bold;
+    background-color: #ff5a52;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Custom css */
+
+#header {
+    background-image: url(/images/top-banner.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+.h-container,
+.m-container,
+.e-container {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.left-header-content,
+.right-header-content,
+.left-main-content,
+.right-main-content {
+    width: 45%;
+}
+.left-header-content h1 {
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 100px;
+    margin: 25px 0px;
+}
+.left-header-content span {
+    color: orange;
+}
+.left-header-content h4 {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+/* Main Container */
+
+#main {
+    background-image: url(/images/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+.right-main-content {
+    margin-top: 50px;
+}
+.right-main-content h1 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.right-main-content h4 {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Experience content */
+
+#experience {
+    margin: 50px 0px 200px 0px;
+}
+#experience > h1 {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.e-left-content,
+.e-right-content {
+    width: 43%;
+    padding: 50px;
+    box-shadow: -2px 6px 20px #b8b8b8;
+}
+.e-left-content {
+    border-left: 7px solid orange;
+}
+.e-left-content h1,
+.e-right-content h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.e-left-content h4,
+.e-right-content h4 {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.e-right-content {
+    border-left: 7px solid blue;
+}
+
+#footer p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+/* Responsive css */
+@media only screen and (max-width: 992px) {
+    .left-header-content h1 {
+        font-size: 36px;
+        line-height: 57px;
+        margin: 16px 0px;
+    }
+    .left-header-content h4 {
+        font-size: 16px;
+    }
+    .left-header-content p {
+        font-size: 13px;
+    }
+    .btn {
+        padding: 8px 19px;
+    }
+    .right-main-content h1 {
+        margin-bottom: 10px;
+        font-size: 35px;
+    }
+    .right-main-content h4 {
+        font-size: 15px;
+        margin-bottom: 13px;
+    }
+    .right-main-content p {
+        font-size: 13px;
+    }
+    #experience > h1 {
+        font-size: 37px;
+    }
+    .e-left-content h1, .e-right-content h1 {
+        font-size: 28px;
+        margin-bottom: 19px;
+    }
+    .e-left-content, .e-right-content {
+        padding: 25px;
+    }
+    .e-left-content h4, .e-right-content h4 {
+        font-size: 17px;
+    }
+    .e-left-content p, .e-right-content p {
+        font-size: 13px;
+    }
+    #experience {
+        margin: 50px 0px 100px 0px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .h-container,
+    .m-container,
+    .e-container {
+        flex-direction: column;
+    }
+    .left-header-content, .right-header-content, .left-main-content, .right-main-content, .e-left-content, .e-right-content {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .e-left-content {
+        margin-bottom: 30px;
+    }
+    #experience > h1 {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .left-header-content h1 {
+        font-size: 35px;
+        line-height: 47px;
+        margin: 43px 0px;
+    }
+    .left-header-content, .right-header-content, .left-main-content, .right-main-content, .e-left-content, .e-right-content {
+        margin: 25px auto;
+    }
+    .e-left-content h1, .e-right-content h1 {
+        font-size: 22px;
+    }
+    .e-left-content h4, .e-right-content h4 {
+        font-size: 11px;
+    }
+    .e-left-content p, .e-right-content p {
+        font-size: 8px;
+    }
+    #experience {
+        margin: 50px 0px;
+    }
+}
